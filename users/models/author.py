@@ -11,13 +11,13 @@ class Author(models.Model):
  
     author_name = models.CharField( 
         max_length=150, 
-        verbose_name="Ник" 
+        verbose_name="Ник",
+        unique=True 
     ) 
  
     name = models.CharField( 
         max_length=150,  
-        verbose_name="Имя", 
-        unique=True 
+        verbose_name="Имя"
     ) 
  
     surname = models.CharField( 
